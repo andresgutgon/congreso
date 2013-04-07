@@ -1,0 +1,12 @@
+/* humanstxt.org */
+
+/* TEAM */
+  Name: Andrés
+  Site: http://usandolarueda.blogspot.com
+  Twitter: @andresgutgon
+
+/* SITE */
+  Last update: 2013/03/16 
+  Standards: HTML5, CSS3
+  Components: jQuery, Underscore, Backbone, Grunt, requireJS, Sass, Compass
+  Software: Sublime, Unix, Mac OX, Git

@@ -1,0 +1,11 @@
+{
+  "name": "congreso",
+  "version": "0.0.1",
+  "dependencies": {
+    "requirejs": null,
+    "jquery": null,
+    "backbone": "1.0.0",
+    "underscore": null,
+    "backbone-tastypie": "git://github.com/PaulUithol/backbone-tastypie.git"
+  }
+}
