@@ -4,15 +4,13 @@ define([
   'underscore',
   'backbone',
   'templates',
-], function(Congreso, $, _, Backbone, Templates) {
-  
+], function(Congreso, $, _, Backbone, Templates) {  
   var GroupItemView;
 
-  GroupItemView = Backbone.View.extend({
-    tagName: 'li'
-    , className: 'group-item'
+  var GroupDetailView = Backbone.View.extend({
+    className: 'group-detail'
     , initialize: function() {
-      this.template = Templates['group/item.jade'];
+      this.template = Templates['group/detail.jade'];
       this.model.bind("reset", this.render, this);
     },
     

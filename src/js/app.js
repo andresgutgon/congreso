@@ -1,9 +1,9 @@
-define('App', [
+define([
   'jquery',
   'underscore',
   'backbone',
-  'Router'
-], function($, _, Backbone, Router) {
+  'GroupRouter'
+], function($, _, Backbone, GroupRouter) {
 
   function initialize() {
     var $loading = $('#loading');
@@ -14,7 +14,10 @@ define('App', [
       $loading.fadeOut(); 
     });
 
-    var app = new Router();
+    // Routers of Api End points
+    var groupRouter = new GroupRouter();
+
+    //  Start router
     Backbone.history.start();
   }
 

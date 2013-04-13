@@ -43,9 +43,11 @@ require.config({
     'BaseCollection'     : 'modules/base/base_collections',
     // API Modules
     'GroupModel'         : 'modules/group/group_model',
+    'GroupRouter'        : 'modules/group/group_router',
     'GroupCollection'    : 'modules/group/group_collections',
     'GroupListView'      : 'modules/group/views/list',
-    'GroupItemView'      : 'modules/group/views/item'
+    'GroupItemView'      : 'modules/group/views/item',
+    'GroupDetailView'    : 'modules/group/views/detail'
   }
 
 })
@@ -57,9 +59,6 @@ require([
   "App"
 ],
 function(congreso, $, Backbone, App) {
-
-  // Shorthand the application Congreso
-  var app = congreso.app;
 
   // Treat the jQuery ready function as the entry point to the application.
   // Inside this function, kick-off all initialization, everything up to this
