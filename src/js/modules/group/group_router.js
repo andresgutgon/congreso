@@ -3,9 +3,8 @@ define([
   'underscore',
   'backbone',
   'GroupListView',
-  'GroupDetailView',
-  'GroupCollection'
-], function($, _, Backbone, GroupListView,GroupDetailView, GroupCollection) {
+  'GroupDetailView'
+], function($, _, Backbone, GroupListView,GroupDetailView) {
   var AppRouter;
 
   GroupRouter = Backbone.Router.extend({
@@ -17,8 +16,8 @@ define([
     groupList: function() {
       $('#root-element').html(new GroupListView().el);
     },
-    groupDetail: function() {
-      $('#root-element').html(new GroupDetailView().el);
+    groupDetail: function(id) {      
+      $('#root-element').html(new GroupDetailView({id:id}).el);
     }
   });
 

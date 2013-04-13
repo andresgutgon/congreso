@@ -1,0 +1,32 @@
+ul
+  - each val, key in model
+    li      
+      - if ( key == 'parties' )
+        strong #{key} (#{val.length}) :
+        ul
+          for party in val
+            - each party_val, key in party
+              - if ( key == 'party' )
+                li
+                  strong #{key} : 
+                  ul
+                    - each party_detail, key in party_val
+                      li
+                        strong #{key} : 
+                        - if ( key == 'logo' )
+                          -if (party_detail)
+                            img(src="#{base_url}#{party_detail}")
+                          - else
+                            span Sin logo
+                        - else if ( key == 'members' )
+                          ul
+                            for member_url in party_detail
+                              li
+                                strong url: 
+                                != member_url
+                            
+                        - else                        
+                          != party_detail
+      - else
+          strong #{key} : 
+          != val        

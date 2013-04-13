@@ -7,11 +7,17 @@ define([
 
   function initialize() {
     var $loading = $('#loading');
+    $loading.html("Cargando...");
     $(document).ajaxStart(function(){ 
       $loading.fadeIn(); 
     });
-    $(document).ajaxComplete(function(){ 
-      $loading.fadeOut(); 
+    $(document).ajaxComplete(function(event, xhr, ajaxOptions){ 
+      if (xhr.status === 200 || xhr.status === 301) {
+        $loading.fadeOut();         
+      }
+    });
+    $(document).ajaxError(function(){ 
+      $loading.html("Ha habido un error. Por favor actualiza la pagina.");
     });
 
     // Routers of Api End points

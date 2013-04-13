@@ -7,7 +7,12 @@
 ], function(Congreso, $, _, Backbone, BaseModel) {
   
   var GroupModel = BaseModel.extend({
-    url: Congreso.colibri_api_end_point + "/group" + Congreso.colibri_api_format
+    initialize: function(attributes, options) {
+      this.id = attributes.id || null;
+    }
+    , url: function() {
+      return Congreso.colibri_api_end_point + "/group/" + this.id + "/" + Congreso.colibri_api_format
+    }  
     , getPermalink: function () {
     	return "#groups/" + this.id;
     }
