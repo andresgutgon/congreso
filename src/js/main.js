@@ -40,10 +40,10 @@ require.config({
     'HomeView'           : 'views/home/home',
     // Base Module
     'BaseModel'          : 'modules/base/base_model',
-    'BaseCollection'     : 'modules/base/base_collection',
+    'BaseCollection'     : 'modules/base/base_collections',
     // API Modules
     'GroupModel'         : 'modules/group/group_model',
-    'GroupCollection'    : 'modules/group/group_collection',
+    'GroupCollection'    : 'modules/group/group_collections',
     'GroupListView'      : 'modules/group/views/list',
     'GroupItemView'      : 'modules/group/views/item'
   }
