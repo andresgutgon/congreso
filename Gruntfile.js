@@ -1,25 +1,6 @@
 module.exports = function(grunt) {
-
-  // Project configuration.
-  // var path = require('path');
-  // var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
-
-  // var folderMount = function folderMount(connect, point) {
-  //   return connect.static(path.resolve(point));
-  // };
-
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    // connect: {
-    //   livereload: {
-    //     options: {
-    //       port: 9001,
-    //       middleware: function(connect, options) {
-    //         return [lrSnippet, folderMount(connect, options.base)]
-    //       }
-    //     }
-    //   }
-    // },    
+    pkg: grunt.file.readJSON('package.json'),  
     jshint: {
       // define the files to lint
       files: ['gruntfile.js', 'src/js/modules/**/*.js', 'src/js/main.js', 'src/js/congreso.js', 'src/js/app.js'],
@@ -35,17 +16,17 @@ module.exports = function(grunt) {
         scripturl: true
       }
     },
-    // clean: {
-    //   build: ["dist"]
-    // },
-    // copy: {
-    //   dist: {
-    //     files: {
-    //       'dist/index.html': 'src/index.html',
-    //       'dist/js/lib/core/require.js': 'src/js/lib/core/require.js'
-    //     }
-    //   }
-    // },    
+    clean: {
+      build: ["dist"]
+    },
+    copy: {
+      dist: {
+        files: {
+          'dist/index.html': 'src/index.html',
+          'dist/js/vendor/requirejs/require.js': 'src/js/vendor/requirejs/require.js'
+        }
+      }
+    },    
     jade: {
       compile: {
         options: {
@@ -80,24 +61,17 @@ module.exports = function(grunt) {
           config: 'config.rb'
         }
       }
-    }
-    // reguarde es como watch pero para LiveReload.
-    // regarde: {
-    //   js: {
-    //     files: ['src/js/**/*.js', 'src/css/**/*.css', 'src/index.html'],
-    //     tasks: ['livereload']
-    //   }
-    // }, 
-    // useminPrepare: {
-    //   html: 'src/index.html',
-    //   dest: 'dist'
-    // },
-    // usemin: {
-    //   html: ['dist/index.html'],
-    //   options: {
-    //     dirs: ['dist']
-    //   }            
-    // },
+    },
+    useminPrepare: {
+      html: 'src/index.html',
+      dest: 'dist'
+    },
+    usemin: {
+      html: ['dist/index.html'],
+      options: {
+        dirs: ['dist']
+      }            
+    },
     // cssmin: {
     //   compress: {
     //     files: {
@@ -105,29 +79,29 @@ module.exports = function(grunt) {
     //     }
     //   }
     // },      
-    // requirejs: {
-    //     compile: {
-    //         options: {
-    //           name: "congreso",
-    //           baseUrl: "src/js",
-    //           mainConfigFile: "src/js/congreso.js",
-    //           out: "dist/js/congreso.min.js",
-    //           wrap: true
-    //         }
-    //     }
-    // }
+    requirejs: {
+        compile: {
+            options: {
+              name: 'main',
+              baseUrl: "src/js",
+              mainConfigFile: "src/js/main.js",
+              out: "dist/js/main.min.js",
+              wrap: true
+            }
+        }
+    }
   });
 
   // Plugins
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  // grunt.loadNpmTasks('grunt-contrib-cssmin');
-  // grunt.loadNpmTasks('grunt-contrib-clean');
-  // grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  // grunt.loadNpmTasks('grunt-contrib-requirejs');
-  // grunt.loadNpmTasks('grunt-usemin');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-usemin');
   // LiveReload Plugin
   // grunt.loadNpmTasks('grunt-regarde');
   // grunt.loadNpmTasks('grunt-contrib-connect');
@@ -135,10 +109,6 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  // grunt.registerTask('default', ['jade', 'jshint', 'useminPrepare', 'requirejs', 'concat', 'uglify', 'usemin']);
-
   // grunt.registerTask('default', ['clean','jade', 'jshint','useminPrepare', 'requirejs','cssmin','copy', 'usemin']);
-
-  // This tasks are to monitorize and update browser on development when fles changes.
-  // grunt.registerTask('live', ['livereload-start', 'connect', 'regarde']);
+  grunt.registerTask('default', ['clean','jade', 'jshint','useminPrepare', 'requirejs','copy', 'usemin']);
 };
