@@ -8,13 +8,11 @@
   // In the futere we may use this to make custom methods.
   var BaseModel = Backbone.Model.extend({  
     initialize: function(attributes, options) {
-      options || (options = {});
-      this.bind("error", this.defaultErrorHandler);
-      this.init && this.init(attributes, options);
+      options = options || {};
     }
     , defaultErrorHandler: function(model, error) {
       if (error.status == 301 || error.status == 403) {
-        alert("Recurso movido")
+        return true;
       }
     }  
   });

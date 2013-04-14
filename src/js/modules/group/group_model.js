@@ -11,10 +11,10 @@
       this.id = attributes.id || null;
     }
     , url: function() {
-      return Congreso.colibri_api_end_point + "/group/" + this.id + "/" + Congreso.colibri_api_format
+     return Congreso.colibri_api_end_point + "/group/" + this.id + "/" + Congreso.colibri_api_format;
     }  
     , getPermalink: function () {
-    	return '#group/' + this.id;
+      return '#group/' + this.id;
     }
   });
 

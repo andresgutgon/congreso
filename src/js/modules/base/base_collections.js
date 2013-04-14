@@ -8,9 +8,8 @@
   
   var BaseCollection = Backbone.Collection.extend({
     initialize: function(attributes, options) {
-      options || (options = {});
+      options = options || {};
       this.bind("error", this.defaultErrorHandler);
-      this.init && this.init(attributes, options);
     }
     , defaultErrorHandler: function(model, error) {
       if (error.status == 301 || error.status == 403) {

@@ -20,20 +20,21 @@ module.exports = function(grunt) {
     //     }
     //   }
     // },    
-    // jshint: {
-    //   // define the files to lint
-    //   files: ['gruntfile.js', 'src/congreso/*.js'],
-    //   // configure JSHint (documented at http://www.jshint.com/docs/)
-    //   options: {
-    //       // more options here if you want to override JSHint defaults
-    //     globals: {
-    //       jQuery: true,
-    //       console: true,
-    //       module: true
-    //     },
-    //     laxcomma: true
-    //   }
-    // },
+    jshint: {
+      // define the files to lint
+      files: ['gruntfile.js', 'src/js/modules/**/*.js', 'src/js/main.js', 'src/js/congreso.js', 'src/js/app.js'],
+      // configure JSHint (documented at http://www.jshint.com/docs/)
+      options: {
+          // more options here if you want to override JSHint defaults
+        globals: {
+          jQuery: true,
+          console: true,
+          module: true
+        },
+        laxcomma: true,
+        scripturl: true
+      }
+    },
     // clean: {
     //   build: ["dist"]
     // },
@@ -118,7 +119,7 @@ module.exports = function(grunt) {
   });
 
   // Plugins
-  // grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   // grunt.loadNpmTasks('grunt-contrib-cssmin');
   // grunt.loadNpmTasks('grunt-contrib-clean');
   // grunt.loadNpmTasks('grunt-contrib-copy');

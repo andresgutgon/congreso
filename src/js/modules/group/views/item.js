@@ -3,7 +3,7 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'templates',
+  'templates'
 ], function(Congreso, $, _, Backbone, Templates) {
   
   var GroupItemView;
