@@ -1,23 +1,24 @@
 define([
+  'Congreso',
   'jquery',
   'underscore',
   'backbone',
   'GroupListView',
   'GroupDetailView'
-], function($, _, Backbone, GroupListView,GroupDetailView) {
-  var AppRouter;
+], function(Congreso, $, _, Backbone, GroupListView,GroupDetailView) {
+  var group_base = Congreso.group_base;
 
   GroupRouter = Backbone.Router.extend({
     routes: {
-      ''        : 'groupList'
-      , 'groups': 'groupList'
-      , 'groups/:id': 'groupDetail'
-    },
-    groupList: function() {
-      $('#root-element').html(new GroupListView().el);
-    },
-    groupDetail: function(id) {      
-      $('#root-element').html(new GroupDetailView({id:id}).el);
+      '': 'groupList'
+      ,'group' : 'groupList'
+      , "group/:id": 'groupDetail'
+    }
+    , groupList: function() {
+      Congreso.root_element.html(new GroupListView().el);
+    }
+    , groupDetail: function(id) {      
+      Congreso.root_element.html(new GroupDetailView({id:id}).el);
     }
   });
 

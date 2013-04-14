@@ -68,8 +68,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -79,8 +85,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -127,8 +139,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -138,8 +156,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -203,8 +227,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -214,8 +244,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -262,8 +298,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -273,8 +315,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -350,8 +398,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -361,8 +415,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -409,8 +469,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -420,8 +486,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -485,8 +557,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -496,8 +574,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -544,8 +628,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -555,8 +645,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -657,8 +753,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -668,8 +770,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -716,8 +824,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -727,8 +841,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -792,8 +912,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -803,8 +929,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -851,8 +983,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -862,8 +1000,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -939,8 +1083,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -950,8 +1100,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -998,8 +1154,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -1009,8 +1171,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -1074,8 +1242,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -1085,8 +1259,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -1133,8 +1313,14 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -1144,8 +1330,14 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
+ var id = member_url.match(/\/(\d+)\/$/)[1];
+buf.push('<a');
+buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
+buf.push('>');
 var __val__ = member_url
 buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+ console.log(id);
 buf.push('</li>');
     }
 
@@ -1227,6 +1419,92 @@ var buf = [];
 with (locals || {}) {
 var interp;
 buf.push('<div class="home"></div>');
+}
+return buf.join("");
+};
+
+this["Templates"]["member/detail.jade"] = function anonymous(locals, attrs, escape, rethrow, merge) {
+attrs = attrs || jade.attrs; escape = escape || jade.escape; rethrow = rethrow || jade.rethrow; merge = merge || jade.merge;
+var buf = [];
+with (locals || {}) {
+var interp;
+buf.push('<ul>');
+// iterate model
+;(function(){
+  if ('number' == typeof model.length) {
+
+    for (var key = 0, $$l = model.length; key < $$l; key++) {
+      var val = model[key];
+
+buf.push('<li><strong>' + escape((interp = key) == null ? '' : interp) + ' : </strong>');
+ if ( key == 'avatar' )
+{
+buf.push('<img');
+buf.push(attrs({ 'src':("" + (val) + ""), 'height':("90px") }, {"src":true,"height":true}));
+buf.push('/>');
+}
+ else if ( key == "congress_web")
+{
+buf.push('<a');
+buf.push(attrs({ 'href':("" + (val) + ""), 'target':("_blank") }, {"href":true,"target":true}));
+buf.push('>Enlaza a su página en el congreso</a>');
+}
+ else if ( key == "twitter")
+{
+buf.push('<a');
+buf.push(attrs({ 'href':("" + (val) + ""), 'target':("_blank") }, {"href":true,"target":true}));
+buf.push('>');
+var __val__ = val
+buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+}
+ else
+{
+var __val__ = val          
+buf.push(null == __val__ ? "" : __val__);
+}
+buf.push('</li>');
+    }
+
+  } else {
+    var $$l = 0;
+    for (var key in model) {
+      $$l++;      var val = model[key];
+
+buf.push('<li><strong>' + escape((interp = key) == null ? '' : interp) + ' : </strong>');
+ if ( key == 'avatar' )
+{
+buf.push('<img');
+buf.push(attrs({ 'src':("" + (val) + ""), 'height':("90px") }, {"src":true,"height":true}));
+buf.push('/>');
+}
+ else if ( key == "congress_web")
+{
+buf.push('<a');
+buf.push(attrs({ 'href':("" + (val) + ""), 'target':("_blank") }, {"href":true,"target":true}));
+buf.push('>Enlaza a su página en el congreso</a>');
+}
+ else if ( key == "twitter")
+{
+buf.push('<a');
+buf.push(attrs({ 'href':("" + (val) + ""), 'target':("_blank") }, {"href":true,"target":true}));
+buf.push('>');
+var __val__ = val
+buf.push(null == __val__ ? "" : __val__);
+buf.push('</a>');
+}
+ else
+{
+var __val__ = val          
+buf.push(null == __val__ ? "" : __val__);
+}
+buf.push('</li>');
+    }
+
+  }
+}).call(this);
+
+buf.push('</ul>');
 }
 return buf.join("");
 };

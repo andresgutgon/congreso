@@ -1,0 +1,12 @@
+ul
+  - each val, key in model
+    li
+      strong #{key} : 
+      - if ( key == 'avatar' )
+        img(src="#{val}", height="90px")
+      - else if ( key == "congress_web")
+        a(href="#{val}", target="_blank") Enlaza a su página en el congreso
+      - else if ( key == "twitter")
+        a(href="#{val}", target="_blank")!= val
+      - else
+        != val          

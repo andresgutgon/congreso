@@ -2,8 +2,9 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'GroupRouter'
-], function($, _, Backbone, GroupRouter) {
+  'GroupRouter',
+  'MemberRouter'
+], function($, _, Backbone, GroupRouter, MemberRouter) {
 
   function initialize() {
     var $loading = $('#loading');
@@ -21,7 +22,8 @@ define([
     });
 
     // Routers of Api End points
-    var groupRouter = new GroupRouter();
+    var groupRouter  = new GroupRouter();
+    var memberRouter = new MemberRouter();
 
     //  Start router
     Backbone.history.start();

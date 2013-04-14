@@ -41,13 +41,17 @@ require.config({
     // Base Module
     'BaseModel'          : 'modules/base/base_model',
     'BaseCollection'     : 'modules/base/base_collections',
-    // API Modules
+    // Groups End Point
     'GroupModel'         : 'modules/group/group_model',
     'GroupRouter'        : 'modules/group/group_router',
     'GroupCollection'    : 'modules/group/group_collections',
     'GroupListView'      : 'modules/group/views/list',
     'GroupItemView'      : 'modules/group/views/item',
-    'GroupDetailView'    : 'modules/group/views/detail'
+    'GroupDetailView'    : 'modules/group/views/detail',
+    // Members End Point
+    'MemberModel'        : 'modules/member/member_model',
+    'MemberRouter'       : 'modules/member/member_router',
+    'MemberDetailView'   : 'modules/member/views/detail'
   }
 
 })

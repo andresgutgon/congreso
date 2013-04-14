@@ -4,14 +4,14 @@ define([
   'underscore',
   'backbone',
   'templates',
-  'GroupModel'
-], function(Congreso, $, _, Backbone, Templates, GroupModel) {  
+  'MemberModel'
+], function(Congreso, $, _, Backbone, Templates, MemberModel) {  
 
-  var GroupDetailView = Backbone.View.extend({
-    className: 'group-detail'
+  var MemberDetailView = Backbone.View.extend({
+    className: 'member-detail'
     , initialize: function (attr) {
-      this.model = new GroupModel({id: attr.id});
-      this.template = Templates['group/detail.jade'];      
+      this.model = new MemberModel({id: attr.id});
+      this.template = Templates['member/detail.jade'];      
       this.render();
     }
     , render: function() {
@@ -21,7 +21,6 @@ define([
           self.$el.append(self.template({
             model: model.toJSON()
             , base_url: Congreso.cogreso_base_url
-            , colibri_api_format: Congreso.colibri_api_format
           }));
         }
       });
@@ -29,5 +28,5 @@ define([
       
   });
 
-  return GroupDetailView;
+  return MemberDetailView;
 });
