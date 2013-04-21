@@ -64,12 +64,23 @@ require([
 ],
 function(congreso, $, Backbone, App) {
 
+  // Here override Backbone.sync to make CORS work 
+  // When we query the api of projectocolibri.es
+  var originalSync = Backbone.sync;
+  Backbone.sync = function (method, model, options) {
+    if (method === "read") {
+      options.dataType = "jsonp";
+      return originalSync.apply(Backbone, arguments);
+    }
+  };  
+
   // Treat the jQuery ready function as the entry point to the application.
   // Inside this function, kick-off all initialization, everything up to this
-  // point should be definitions.
+  // point should be definitions.  
   $(function() {
     App.initialize();
   });
+
 
   // All navigation that is relative should be passed through the navigate
   // method, to be processed by the router.  If the link has a data-bypass

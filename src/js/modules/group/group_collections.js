@@ -9,7 +9,7 @@
   
   var GroupCollection = BaseCollection.extend({
     model: GroupModel
-    , url: Congreso.colibri_api_end_point + "/group" + Congreso.colibri_api_format
+    , url: Congreso.colibri_api_end_point + "/group/" + Congreso.colibri_api_format
   });  
   
   return GroupCollection;

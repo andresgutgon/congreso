@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       },
       gh_pages: {
         // Target-specific file lists and/or options go here.
-      },
+      }
     },    
     clean: {
       build: ["dist"]

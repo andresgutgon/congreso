@@ -11,7 +11,7 @@ function($, _, Backbone) {
   , Congreso = {
     cogreso_base_url: cogreso_base_url 
     , colibri_api_end_point: cogreso_base_url + "/api/v" + version
-    , colibri_api_format: "?format=json"
+    , colibri_api_format: "?format=jsonp"
     , root_element: $('#root-element')
   };
 
