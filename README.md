@@ -11,3 +11,12 @@ For now I need to open Chrome from terminal this way to fetch data from a remote
 
 And to run a simple local server with Python:
 `python -m SimpleHTTPServer`.
+
+DEVELOPMENT
+===========
+* `git clone git@github.com:andresgutgon/congreso.git`
+* Install node 
+* Install grunt-cli `npm install -g grunt-cli`
+* cd congreso
+* `npm install`. This install all node dependencies used in the project.
+
