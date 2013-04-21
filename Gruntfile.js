@@ -113,6 +113,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-build-gh-pages');
+  grunt.loadNpmTasks('grunt-shell');
   // LiveReload Plugin
   // grunt.loadNpmTasks('grunt-regarde');
   // grunt.loadNpmTasks('grunt-contrib-connect');
