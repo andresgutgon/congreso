@@ -20,3 +20,8 @@ DEVELOPMENT
 * cd congreso
 * `npm install`. This install all node dependencies used in the project.
 
+NOTE
+====
+If `grunt` command is not recognise. Add to your .bashrc or bashprofile or .profile file this way:
+`export PATH=/usr/local/share/npm/bin:$PATH`
+

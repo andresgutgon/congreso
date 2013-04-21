@@ -16,6 +16,16 @@ module.exports = function(grunt) {
         scripturl: true
       }
     },
+    build_gh_pages: {
+      options: {
+        dist: 'dist',
+        build_branch: 'gh-pages',
+        pull: true
+      },
+      gh_pages: {
+        // Target-specific file lists and/or options go here.
+      },
+    },    
     clean: {
       build: ["dist"]
     },
@@ -102,6 +112,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-usemin');
+  grunt.loadNpmTasks('grunt-build-gh-pages');
   // LiveReload Plugin
   // grunt.loadNpmTasks('grunt-regarde');
   // grunt.loadNpmTasks('grunt-contrib-connect');
