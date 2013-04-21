@@ -10,4 +10,4 @@ For now I need to open Chrome from terminal this way to fetch data from a remote
 `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome - --disable-web-security`
 
 And to run a simple local server with Python:
-`python -m SimpleHTTPServer`
+`python -m SimpleHTTPServer`.
