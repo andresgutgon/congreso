@@ -68,11 +68,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -85,11 +85,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -139,11 +139,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -156,11 +156,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -227,11 +227,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -244,11 +244,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -298,11 +298,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -315,11 +315,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -398,11 +398,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -415,11 +415,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -469,11 +469,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -486,11 +486,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -557,11 +557,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -574,11 +574,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -628,11 +628,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -645,11 +645,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -753,11 +753,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -770,11 +770,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -824,11 +824,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -841,11 +841,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -912,11 +912,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -929,11 +929,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -983,11 +983,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1000,11 +1000,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1083,11 +1083,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1100,11 +1100,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1154,11 +1154,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1171,11 +1171,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1242,11 +1242,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1259,11 +1259,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1313,11 +1313,11 @@ buf.push('<ul>');
       var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);
@@ -1330,11 +1330,11 @@ buf.push('</li>');
       $$l++;      var member_url = party_detail[$index];
 
 buf.push('<li><strong>url: </strong>');
- var id = member_url.match(/\/(\d+)\/$/)[1];
+ var id = member_url.member.match(/\/(\d+)\/$/)[1];
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url
+var __val__ = member_url.member
 buf.push(null == __val__ ? "" : __val__);
 buf.push('</a>');
  console.log(id);

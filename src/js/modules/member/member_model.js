@@ -6,7 +6,7 @@
   'BaseModel'
 ], function(Congreso, $, _, Backbone, BaseModel) {
   
-  var GroupModel = BaseModel.extend({
+  var MemberModel = BaseModel.extend({
     initialize: function(attributes, options) {
       this.id = attributes.id || null;
     }
@@ -18,5 +18,5 @@
     }
   });
 
-  return GroupModel;
+  return MemberModel;
 });
