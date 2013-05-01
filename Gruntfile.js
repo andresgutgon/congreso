@@ -120,7 +120,7 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-livereload');  
 
 
-  // Default task(s).
-  // grunt.registerTask('default', ['clean','jade', 'jshint','useminPrepare', 'requirejs','cssmin','copy', 'usemin']);
+  // Default task build package and deploy build + push to GitHub page.  
   grunt.registerTask('default', ['clean','jade', 'jshint','useminPrepare', 'requirejs','copy', 'usemin']);
+  grunt.registerTask('deploy', ['default', 'build_gh_pages']);
 };
