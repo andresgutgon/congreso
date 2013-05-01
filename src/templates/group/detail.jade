@@ -24,9 +24,7 @@ ul
                               li
                                 strong url: 
                                 - var id = member_url.member.match(/\/(\d+)\/$/)[1];
-                                a(href='#member/#{id}')!= member_url.member
-                                - console.log(id);
-                            
+                                a(href='#member/#{id}')!= member_url.member                            
 
                         - else                        
                           != party_detail

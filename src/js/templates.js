@@ -72,11 +72,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -89,11 +87,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -143,11 +139,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -160,11 +154,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -231,11 +223,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -248,11 +238,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -302,11 +290,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -319,11 +305,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -402,11 +386,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -419,11 +401,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -473,11 +453,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -490,11 +468,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -561,11 +537,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -578,11 +552,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -632,11 +604,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -649,11 +619,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -757,11 +725,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -774,11 +740,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -828,11 +792,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -845,11 +807,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -916,11 +876,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -933,11 +891,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -987,11 +943,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -1004,11 +958,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -1087,11 +1039,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -1104,11 +1054,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -1158,11 +1106,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -1175,11 +1121,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -1246,11 +1190,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -1263,11 +1205,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
@@ -1317,11 +1257,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   } else {
@@ -1334,11 +1272,9 @@ buf.push('<li><strong>url: </strong>');
 buf.push('<a');
 buf.push(attrs({ 'href':('#member/' + (id) + '') }, {"href":true}));
 buf.push('>');
-var __val__ = member_url.member
+var __val__ = member_url.member                            
 buf.push(null == __val__ ? "" : __val__);
-buf.push('</a>');
- console.log(id);
-buf.push('</li>');
+buf.push('</a></li>');
     }
 
   }
