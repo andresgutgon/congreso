@@ -1,6 +1,17 @@
 module.exports = function(grunt) {
+  var execSync = require('execSync')
+    , default_tasks = ['clean:dist','development_server']
+    , default_tasks_bk = ['clean:dist','jade', 'jshint','useminPrepare', 'requirejs','copy', 'usemin']
+    , config = {
+      src: 'src',
+      build: 'build',
+      dist: 'dist',
+      port: 9000
+    };
+
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),  
+    config: config,
+    pkg: grunt.file.readJSON('package.json'),
     jshint: {
       // define the files to lint
       files: ['gruntfile.js', 'src/js/modules/**/*.js', 'src/js/main.js', 'src/js/congreso.js', 'src/js/app.js'],
@@ -18,7 +29,7 @@ module.exports = function(grunt) {
     },
     build_gh_pages: {
       options: {
-        dist: 'dist',
+        dist: '<%= config.dist %>',
         build_branch: 'gh-pages',
         pull: true
       },
@@ -27,13 +38,14 @@ module.exports = function(grunt) {
       }
     },    
     clean: {
-      build: ["dist"]
+      build: ['<%= config.build %>'],
+      dist: ['<%= config.dist %>']
     },
     copy: {
-      dist: {
+      build: {
         files: {
-          'dist/index.html': 'src/index.html',
-          'dist/js/vendor/requirejs/require.js': 'src/js/vendor/requirejs/require.js'
+          '<%= config.build %>/index.html': '<%= config.src %>/index.html',
+          'build/js/vendor/requirejs/require.js': 'src/js/vendor/requirejs/require.js'
         }
       }
     },    
@@ -99,7 +111,7 @@ module.exports = function(grunt) {
               wrap: true
             }
         }
-    }
+    } 
   });
 
   // Plugins
@@ -114,13 +126,23 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-build-gh-pages');
   grunt.loadNpmTasks('grunt-shell');
-  // LiveReload Plugin
-  // grunt.loadNpmTasks('grunt-regarde');
-  // grunt.loadNpmTasks('grunt-contrib-connect');
-  // grunt.loadNpmTasks('grunt-contrib-livereload');  
+  grunt.loadNpmTasks('grunt-devserver');
+  
+  grunt.registerTask('development_server', 'Runs a development server', function () {
+    var express = require('express')
+      , done = this.async()
+      , app = express()
+      , dir = __dirname + '/' + config.build;
+    app.use(express.logger()); // comment this line out to avoid the request log
+    app.use('/' + config.build, express.static(dir));
+    app.use('/' + config.build, express.directory(dir)); // nice file listings
+    app.listen(config.port).on('close', done);
+    grunt.log.writeln(dir);
+    grunt.log.writeln("Webserver started at http://localhost:" + config.port + '/');
+  });  
 
-
-  // Default task build package and deploy build + push to GitHub page.  
-  grunt.registerTask('default', ['clean','jade', 'jshint','useminPrepare', 'requirejs','copy', 'usemin']);
+  
   grunt.registerTask('deploy', ['default', 'build_gh_pages']);
+
+  grunt.registerTask('default', default_tasks);
 };
