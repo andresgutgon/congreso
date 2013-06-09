@@ -1,17 +1,37 @@
 module.exports = function(grunt) {
   var execSync = require('execSync')
-    , default_tasks = ['clean:dist','development_server']
-    , default_tasks_bk = ['clean:dist','jade', 'jshint','useminPrepare', 'requirejs','copy', 'usemin']
+    , default_tasks= ['clean:build','jade', 'jshint','useminPrepare', 'copy:build', 'development_server']
     , config = {
-      src: 'src',
-      build: 'build',
-      dist: 'dist',
-      port: 9000
+        src: 'src'
+      , build: 'build'
+      , dist: 'dist'
+      , port: 9000
     };
 
   grunt.initConfig({
     config: config,
     pkg: grunt.file.readJSON('package.json'),
+
+    clean: {
+      build: ['<%= config.build %>'],
+      dist: ['<%= config.dist %>']
+    },
+    watch: {
+      javascripts: {
+        options: {
+          debounceDelay: 250
+        }
+      , files: ['<%= config.src %>/templates/**/*.jade', '<%= config.src %>/sass/**/*.sass','src/sass/**/*.scss']
+      , tasks: ['jade', 'compass']
+      }
+    , vendor: {
+        options: {
+          debounceDelay: 250
+        }
+      , files: ['<%= config.src %>/js/vendor/**/*.js', 'src/sass/**/*.sass','src/sass/**/*.scss']
+      , tasks: ['jade', 'compass']
+      }
+    },
     jshint: {
       // define the files to lint
       files: ['gruntfile.js', 'src/js/modules/**/*.js', 'src/js/main.js', 'src/js/congreso.js', 'src/js/app.js'],
@@ -36,17 +56,11 @@ module.exports = function(grunt) {
       gh_pages: {
         // Target-specific file lists and/or options go here.
       }
-    },    
-    clean: {
-      build: ['<%= config.build %>'],
-      dist: ['<%= config.dist %>']
     },
     copy: {
-      build: {
-        files: {
-          '<%= config.build %>/index.html': '<%= config.src %>/index.html',
-          'build/js/vendor/requirejs/require.js': 'src/js/vendor/requirejs/require.js'
-        }
+      build_vendor: {
+        files: {'<%= config.build %>/js/require.js': '<%= config.src %>/js/vendor/requirejs/require.js'}
+      , files: {src: ['<%= config.src %>/js/libs/jadeRuntime.js'], dest: ['<%= config.build %>/js/vendor/']}
       }
     },    
     jade: {
@@ -65,15 +79,6 @@ module.exports = function(grunt) {
         },
         files: {
           "src/js/templates.js": ["src/templates/**/*.jade"]
-        }
-      }
-    },
-    watch: {
-      scripts: {
-        files: ['src/templates/**/*.jade', 'src/sass/**/*.sass','src/sass/**/*.scss'],
-        tasks: ['jade', 'compass'],
-        options: {
-          debounceDelay: 250
         }
       }
     },
@@ -100,17 +105,22 @@ module.exports = function(grunt) {
     //       'dist/css/app.min.css': ['src/css/normalize.css', 'src/css/app.css']
     //     }
     //   }
-    // },      
+    // }, 
+    bower: {
+      target: {
+        rjsConfig: '<%= config.build %>/js/main.js'
+      }
+    },         
     requirejs: {
-        compile: {
-            options: {
-              name: 'main',
-              baseUrl: "src/js",
-              mainConfigFile: "src/js/main.js",
-              out: "dist/js/main.min.js",
-              wrap: true
-            }
+      compile: {
+        options: {
+          name: 'main',
+          baseUrl: "<%= config.build %>/js",
+          mainConfigFile: "<%= config.build %>/js/main.js",
+          out: "<%= config.dist %>/js/main.min.js",
+          wrap: true
         }
+      }
     } 
   });
 
@@ -123,11 +133,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-bower-requirejs');
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-build-gh-pages');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-devserver');
   
+  // Custom tasks
   grunt.registerTask('development_server', 'Runs a development server', function () {
     var express = require('express')
       , done = this.async()
@@ -141,7 +153,7 @@ module.exports = function(grunt) {
     grunt.log.writeln("Webserver started at http://localhost:" + config.port + '/');
   });  
 
-  
+  // Registered tasks
   grunt.registerTask('deploy', ['default', 'build_gh_pages']);
 
   grunt.registerTask('default', default_tasks);

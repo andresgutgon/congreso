@@ -22,16 +22,19 @@ require.config({
   paths : {
     // Congreso is the global namespace
     'Congreso'           : 'congreso',
-    // Dependencies
-    // To interprect JADE templates in the browser we need jadeRuntime file.
-    jade                 : 'libs/jadeRuntime',
+
+    // vendor Dependencies
     jquery               : 'vendor/jquery/jquery',
     underscore           : 'vendor/underscore/underscore',
     backbone             : 'vendor/backbone/backbone',
     'backbone.wreqr'     : 'vendor/backbone.wreqr/backbone.wreqr',
-    'backbone.babysitter': 'vendoe/backbone.babysitter/backbone.babysitter',
+    'backbone.babysitter': 'vendor/backbone.babysitter/backbone.babysitter',
     marionette           : 'vendor/marionette/marionette',
     backbone_tastypie    : 'vendor/backbone-tastypie/backbone_tastypie/static/js/backbone-tastypie',
+
+    // Libraries  
+    jade                 : 'libs/jadeRuntime', // To interprect JADE templates in the browser we need jadeRuntime file.
+
     // App specific Modules
     'Templates'          : 'templates',
     'App'                : 'app',
