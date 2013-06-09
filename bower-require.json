@@ -1,0 +1,7 @@
+{
+  "jquery"             : "jquery/jquery",
+  "underscore"         : "underscore/underscore",
+  "backbone"           : "backbone/backbone",
+  "marionette"         : "marionette/marionette",
+  "backbone_tastypie"  : "backbone-tastypie/backbone_tastypie/static/js/backbone-tastypie"
+}

@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
   var execSync = require('execSync')
-    , default_tasks= ['clean:build','jade', 'jshint','useminPrepare', 'copy:build', 'development_server']
+    , default_tasks_bk= ['clean:build','jade', 'jshint','useminPrepare', 'copy:build', 'development_server']
+    , default_tasks= ['development_server']
     , config = {
         src: 'src'
       , build: 'build'
@@ -13,8 +14,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     clean: {
-      build: ['<%= config.build %>'],
-      dist: ['<%= config.dist %>']
+      build: ['<%= config.build %>']
+    , dist: ['<%= config.dist %>']
     },
     watch: {
       javascripts: {
@@ -58,9 +59,10 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      build_vendor: {
-        files: {'<%= config.build %>/js/require.js': '<%= config.src %>/js/vendor/requirejs/require.js'}
-      , files: {src: ['<%= config.src %>/js/libs/jadeRuntime.js'], dest: ['<%= config.build %>/js/vendor/']}
+      build_javascript: {
+        files: [
+          {expand: true, cwd: '<%= config.src %>/', src: ['js/**'], dest: '<%= config.build %>/'}
+        ]
       }
     },    
     jade: {
@@ -106,9 +108,19 @@ module.exports = function(grunt) {
     //     }
     //   }
     // }, 
-    bower: {
-      target: {
-        rjsConfig: '<%= config.build %>/js/main.js'
+    // bower: {
+    //   dist: {
+    //     rjsConfig: '<%= config.build %>/js/main.js',
+    //     exclude: 'requirejs'
+    //   }
+    // },     
+    copyBowerComponents: {
+      options: {
+        config: config
+      , rjsConfig: '<%= config.build %>/js/main.js'
+      , components_dir: 'components/'
+      , root: __dirname + '/'
+      , bower_references: 'bower-require.json'        
       }
     },         
     requirejs: {
@@ -137,9 +149,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-build-gh-pages');
   grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-devserver');
   
   // Custom tasks
+  grunt.task.loadTasks('custom-tasks/grunt-copy-bower-requirejs/tasks');
+
   grunt.registerTask('development_server', 'Runs a development server', function () {
     var express = require('express')
       , done = this.async()

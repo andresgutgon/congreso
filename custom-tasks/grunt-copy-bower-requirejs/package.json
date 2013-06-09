@@ -1,0 +1,12 @@
+{
+  "name": "grunt-copy-bower-components",
+  "description": "Grunt plugin to copy main files from components and put in a specific target",
+  "version": "0.0.1",
+  "dependencies": {
+    "requirejs": "~2.1.5"
+  },  
+  "peerDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1"
+  }
+}
